@@ -208,6 +208,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
@@ -259,7 +261,6 @@ footer .copyright {
 /*--------------------Mobile Styles - Homepage------------*/
 
 /* Hero Area */
-
 .hero-area {
   display: flex;
   justify-content: center;
@@ -267,6 +268,7 @@ footer .copyright {
   background: url(../img/unplugged-retreat.jpg);
   background-size: cover;
   background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -275,7 +277,6 @@ footer .copyright {
 }
 
 /* Aside */
-
 aside {
   display: flex;
   justify-content: center;
@@ -310,7 +311,6 @@ input[type=button] {
 }
 
 /* Features */
-
 .features {
   display: flex;
   justify-content: center;
@@ -348,7 +348,6 @@ input[type=button] {
   }
 
 /* Reviews */
-
 .reviews {
   display: flex;
   justify-content: center;
@@ -358,6 +357,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -530,8 +530,18 @@ FAQ Page
 
   /*General styles*/
   .content-wrapper {
-    max-width: 640px
+    max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   /* Header */
@@ -542,6 +552,10 @@ FAQ Page
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -557,16 +571,21 @@ FAQ Page
   }
 
   /* Hero Area */
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
     margin: 50px 0;
-    display flex;
+    display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
   }
 
-  aside .content-wrapper .form-description;
+  aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 35%;
     margin: 0;
@@ -581,11 +600,28 @@ FAQ Page
     flex-basis: 50%;
   }
 
+  .features h2 {
+    margin: 0 20px 20px 0;
+  }
+
   .features .features-item-description {
     width: 50%;
   }
 
   /* Reviews */
+  .reviews h2 {
+    width: 90%;
+  }
+
+  .reviews figure {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
@@ -605,6 +641,11 @@ FAQ Page
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .contact {
@@ -656,6 +697,11 @@ FAQ Page
   .faq h2 {
     width: 100%
   }
+
+  .faq h4, .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
 }
 
 
@@ -666,8 +712,23 @@ FAQ Page
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
   /* Hero */
   .hero-area h1 {
+    font-size: 3.75em;
     width: 60%;
   }
 
@@ -687,7 +748,7 @@ FAQ Page
   }
 
   .features article {
-    flex-basis: 30%;
+    flex-basis: 33%;
   }
 
   /* Reviews */
@@ -701,6 +762,7 @@ FAQ Page
   .mission h2, 
   .contact-section .content-wrapper h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   map figure {
@@ -716,10 +778,16 @@ FAQ Page
   ========================================*/
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq-content {
     flex-basis: 35%;
+  }
+
+  .faq h4, .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
 
