@@ -433,6 +433,11 @@ FAQ Page
   margin-bottom: 50px
 }
 
+.faq-content h4 {
+  line-height: 1.333;
+  font-weight: 700;
+}
+
 
 
 
